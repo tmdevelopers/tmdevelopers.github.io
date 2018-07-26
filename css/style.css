@@ -6,9 +6,7 @@
 @import url('overwrite.css');
 @import url('animate.css');
 
-/* ================================
-General
-================================= */
+
 
 body{
 	text-align: center;
@@ -83,9 +81,7 @@ button.navbar-toggle {
 }
 
 
-/* ================================
-margin, padding
-================================= */
+
 .mar-top0 {
 	margin-top: 0;
 }
@@ -103,7 +99,7 @@ margin, padding
 }
 
 
-/* Back to top button */
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -126,9 +122,7 @@ margin, padding
   outline: none;
 }
 
-/* ================================
-Navbar
-================================= */
+
 
 nav.navbar{
 	position: fixed;
@@ -181,9 +175,6 @@ nav.navbar.fixed-to-top{
 	font-size: 2em;
 }
 
-/* ================================
-Home sections
-================================= */
 
 .home-section {
 	width: 100%;
@@ -211,7 +202,7 @@ Home sections
 }
 
 
-/* --- section bg var --- */
+
 
 .bg-white {
 	background: #fff;
@@ -226,7 +217,7 @@ Home sections
 }
 
 
-/* --- section content general color --- */
+
 
 .color-light h1,.color-light h2,.color-light h3,.color-light h4,.color-light h5,.color-light h6 {
 	color: #fff;
@@ -238,9 +229,7 @@ Home sections
 }
 
 
-/* ==========================
-Parallax
-============================= */
+
 
 #parallax1{
 	background-image: url(../img/parallax/1.jpg);
@@ -253,9 +242,7 @@ Parallax
 }
 
 
-/* ================================
-Intro
-================================= */
+
 
 #intro {
 	position: relative;
@@ -308,9 +295,6 @@ Intro
 	font-weight: 300;
 }
 
-/* ================================
-About
-================================= */
 
 #about .about-img {
   height: 350px;
@@ -357,18 +341,14 @@ About
   margin-bottom: 0;
 }
 
-/* ================================
-Team
-================================= */
+
 .box-team img {
 	margin-bottom: 30px;
 }
 
 
 
-/* ================================
-Services
-================================= */
+
 .service.carousel h4,.service.carousel p {
 	text-align: left;
 }
@@ -425,9 +405,7 @@ Services
 }
 
 
-/* ================================
-Works
-================================= */
+
 .og-grid {
 	list-style: none;
 	padding: 20px 0;
@@ -645,9 +623,7 @@ Works
 	display:block;
 }
 
-/* ================================
-Clients
-================================= */
+
 ul.clients {
 	list-style: none;
 }
@@ -656,9 +632,7 @@ ul.clients li {
 }
 
 
-/* ================================
-Bottom widget
-================================= */
+
 #bottom-widget {
   overflow: hidden;
 }
@@ -681,9 +655,8 @@ ul.social-network li a:hover span .fa-circle {
 ul.social-network li a i{
   transition: 0.3s
 }
-/* ================================
-Footer
-================================= */
+
+
 footer {
 	background: #00ff00;
 	color: #fff;
