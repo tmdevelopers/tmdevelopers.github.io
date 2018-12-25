@@ -1,440 +1,968 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>TMDevs- A Toronto Based Web Development, Web Design, and Business Consulting Firm</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="Description" content="A toronto based web development, web design and consulting firm looking to help small businesses grow to their full potential.">
+        <meta name="KeyWords" content="Web development, Web Design, Websites, Company">
+        <meta name="author" content="CocoBasic" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<head>
-  <title>TMDevs - A Toronto based web development, web design and business consulting firm</title>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <meta name="Description" content="A toronto based web development, web design and consulting firm looking to help small businesses grow to their full potential.">
-  <meta name="KeyWords" content="Web development, Web Design, Websites, Company">	
-	<!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+            <script src="js/jquery.min.js" charset="utf-8"></script>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/style.css" rel="stylesheet" media="screen">
-  <link href="color/default.css" rel="stylesheet" media="screen">
-    <link rel= "icon" type="images/png" href= "img/tmdevslogos.png">
+        <link rel="shortcut icon" href="images/tmdevslogos.png" />
+        <link href='http://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400i,500,600,700%7CMontserrat:700' rel='stylesheet' type='text/css'>
 
-</head>
+        <script src="js/typed.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css"  href='style.css' />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
-<body>
+        <!--[if lt IE 9]>
+                <script src="js/html5shiv.js"></script>
+                <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle nav</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+    <body class="page-template-onepage">
 
-        <!-- Logo text or image -->
-        <a class="navbar-brand" href="index.html">TMDevelopers</a>
+        <div class="site-wrapper">
 
-      </div>
-      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li class="current"><a href="#intro">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">FAQ</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            <div class="doc-loader">
+                <img src="images/preloader.gif" alt="Cardea">
+            </div>
 
-  <!-- intro area -->
-  <div id="intro">
-    <div class="intro-text">
-      <div class="container">
-        <div class="col-md-12">
-          <div id="rotator">
-              <img src = "img/tmdevslogos.png" width="150" height="150">
-              <h1 style="align: center"><span class="1strotate" style= "color: black"> , Website, Design, Consult</span></h1>
-            <div class="line-spacer"></div>
-            <p><span class="2ndrotate" style="color: black">  , Websites you need , Designs you want, Free consulting</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-    <!-- Services -->
-  <section id="services">
-      <h3>A Web Development and Business Consulting Firm</h3>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="section-heading">
-            <h2>Services</h2>
-            <div class="heading-line"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div id="carousel-service" class="service carousel slide">
-
-            <!-- slides -->
-                <div class="row">
-                  <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
-                      <h4>Website Development</h4>
-                      <p>We offer impeccable website designs that are fit and are modeled towards you and your specifications.</p>
+            <header class="header-holder">
+                <div class="menu-wrapper center-relative relative">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="images/tmdevslogoweb3.png" alt="Tmdevs">
+                        </a>
                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
-                      <img src="img/screenshots/1.jpg" class="img-responsive" alt="" width="50" height="50" style="border-radius: 50%" />
+
+                    <div class="toggle-holder">
+                        <div id="toggle" class="">
+                            <div class="first-menu-line"></div>
+                            <div class="second-menu-line"></div>
+                            <div class="third-menu-line"></div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-              <hr>
-                <div class="row">
-                  <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
-                      <h4>100% Satisfaction Guarantee</h4>
-                      <p>At TMDevs we run by a 100% satisfaction guarantee policy. We are not happy until you are !</p>
+
+                    <div class="menu-holder">
+                        <nav id="header-main-menu">
+                            <ul class="main-menu sm sm-clean">
+                                <li>
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#services">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+
+                                <li>
+                                    <a href="#skills">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="#team">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
-                      <img src="img/screenshots/2.jpg" class="img-responsive" alt="" width="50" height="50" style= "border-radius: 50%"/>
-                    </div>
-                  </div>
+                    <div class="clear"></div>
                 </div>
-              <hr>
-                <div class="row">
-                  <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
-                      <h4>Consulting</h4>
-                      <p>For all the small businesses that come to us for their web development needs, we dont stop after the development process but we also offer our feedback through our in house consultant on how to grow your business !</p>
+            </header>
+
+
+
+            <div id="content" class="site-content center-relative">
+
+                <!-- Home -->
+                <div id="home" class="section full-screen full-width">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="content-wrapper">
+                        <div class = "animated flip delay-5s">
+                            <img src="images/tmdevslogos5.png" alt="" class="center-relative block" >
+                        </div>
+                            <h1 class="big-text center">
+                                TMDevs: <span id = "writing-text"><span>
+                            </h1>
+
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
-                      <img src="img/screenshots/3.jpg" class="img-responsive" alt="" width="50" height="50" style="border-radius: 50%" />
-                    </div>
-                  </div>
                 </div>
-              <hr>
-              <div class="row">
-                  <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
-                      <h4>Search Engine Optimization</h4>
-                      <p>We understand that for a lot of small companies it is hard to get the word out to people to find out about your company. With search engine optimization we are able to allow users to find your company online easily !</p>
+
+                <!-- Services -->
+                <div id="services" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left">
+                                <div class="section-top-image">
+                                    <img src="images/01_left.png" alt="">
+                                </div>
+                                <h2 class="entry-title">
+                                    WHAT <br>
+                                    WE <br>
+                                    DO
+                                </h2>
+                                <p class="page-desc">
+                                    Our modest <br>
+                                    list of services
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div class="info-text">Our modest list of services to <br> suit all your digital needs</div>
+                                <p>&nbsp;</p>
+
+                                <div class="one_half animate">
+                                    <div class="service-holder">
+                                        <div class="service-img">
+                                            <img src="images/webdev.png" alt="">
+
+                                        </div>
+                                        <div class="service-txt">
+                                            <h4>Web Development</h4>
+                                            We offer impeccable website designs that are fit and are modeled towards you and your specifications.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="one_half last animate">
+                                    <div class="service-holder">
+                                        <div class="service-img">
+                                            <img src="images/tags.png" alt="">
+                                        </div>
+                                        <div class="service-txt">
+                                            <h4>Search Engine Optimization</h4>
+                                            We understand that for a lot of small companies it is hard to get the word out to people to find out about your company.
+                                            With search engine optimization we are able to allow users to find your company online easily!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+
+                                <div class="one_half animate">
+                                    <div class="service-holder">
+                                        <div class="service-img">
+                                            <img src="images/responsive-symbol-with-a-widescreen-monitor-a-cellphone-and-a-tablet.png" alt="">
+                                        </div>
+                                        <div class="service-txt">
+                                            <h4>Responsive</h4>
+                                            We ensure that all of our designs are compaitable with any device.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="one_half last animate">
+                                    <div class="service-holder">
+                                        <div class="service-img">
+                                            <img src="images/handshake.png" alt="">
+                                        </div>
+                                        <div class="service-txt">
+                                            <h4>Consulting</h4>
+                                            For all the small businesses that come to us for their web development needs,
+                                            we do not stop after the development process, we also offer our feedback through our in house consultant
+                                            on how to grow your business!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+
+                                <div class="one_half animate">
+                                    <div class="service-holder">
+                                        <div class="service-img">
+                                            <img src="images/rating.png" alt="">
+                                        </div>
+                                        <div class="service-txt">
+                                            <h4>100% Satisfaction Guarantee</h4>
+                                            At TMDevs we run by a 100% satisfaction guarantee policy.
+                                            After the website is complete, we will make any changes/additions at your request.
+                                            If you are still not satisfied with the website, you will get a 100% refund.
+                                             We are not happy until you are !
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
-                      <img src="img/screenshots/4.jpg" class="img-responsive" alt="" width="50" height="50" style="border-radius: 50%" />
-                    </div>
-                  </div>
-                  <hr>
                 </div>
-              </div>
-          </div>
-        </div>
-    </div>
-  </section>
 
-<!--FAQ-->
-  <section id="about">
-    <div class="container">
-        <div class="col-md-offset-2 col-md-8 content">
-            
-            <h1>FAQ</h1>
-          <h2>Who are you and what do you do ? </h2>
-          <h3>We are TMDevelopers or more commonly known as TMDevs. We are a Website Development and a Digital Marketing Firm. Our goal is to be able to build a company that people can rely on !</h3>
-          <h2>There are so many similar companies out there, why should I trust you ?</h2>
-          <h3>Our company is unlike other companies not only due to our transparency and adaptability with our clients during the development processs but we also provide complimentary consulting to take your business to the next level ! We also believe our quality to be well above the industry standards !</h3>
-          <h2>How much do you guys charge per website ?</h2>
-          <h3>It honestly varies on a number of different factors. If you are interested in getting your website done please do email us at info@tmdevs.com</h3>
-        </div>
-      </div>
-  </section>
+                <!-- Portfolio
+                <div id="portfolio" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left portfolio-title-fix-class">
+                                <div class="section-top-image">
+                                    <img src="images/02_left.png" alt="">
+                                </div>
+                                <h2 class="entry-title">
+                                    PORT<br>FOL<br>IO
+                                </h2>
+                                <p class="page-desc">
+                                    Check our <br>
+                                    recent work
+                                </p>
+                            </div>
+                        </div>
 
-  <!-- Parallax 1 -->
-  <section id="parallax1" class="home-section parallax" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="color-light">
-            <h2 class="wow bounceInDown" data-wow-delay="0.5s">We can do a lot of things !</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-    
-    
-  <section id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="section-heading">
-            <h2>Our Portfolio</h2>
-            <div class="heading-line"></div>
-            <p>Coming soon........</p>
-          </div>
-        </div>
-      </div>
-        <!--- Fill every time website is completed
-      <div class="row">
-        <div class="col-lg-12">
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div id="portfolio-wrapper">
+                                    <div class="portfolio-load-content-holder"></div>
+                                    <div class="grid" id="portfolio-grid">
+                                        <div class="grid-sizer"></div>
 
-          <ul id="og-grid" class="og-grid">
-            <li>
-              <a href="#" data-largesrc="img/works/1.jpg" data-title="Portfolio title" data-description="Duo te dico volutpat, unum elit oblique per id. Ne duo mollis sapientem intellegebat. Per at augue vidisse percipit, pri vocibus assueverit interesset ut, no dolore luptatum incorrupte nec. In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea. Sed oratio repudiare ei, cum an magna labitur, eu atqui augue mei. Pri consul detracto eu, solet nusquam accusam ex vim, an movet interesset necessitatibus mea.">
-								<img src="img/works/thumbs/1.jpg" alt=""/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/2.jpg" data-title="Portfolio title" data-description="Mea an eros periculis dignissim, quo mollis nostrum elaboraret et. Id quem perfecto mel, no etiam perfecto qui. No nisl legere recusabo nam, ius an tale pericula evertitur, dicat phaedrum qui in. Usu numquam legendos in, voluptaria sadipscing ut vel. Eu eum mandamus volutpat gubergren, eos ad detracto nominati, ne eum idque elitr aliquam.">
-								<img src="img/works/thumbs/2.jpg" alt=""/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/3.jpg" data-title="Portfolio title" data-description="Vim ad persecuti appellantur. Eam ignota deterruisset eu, in omnis fierent convenire sed. Ne nulla veritus vel, liber euripidis in eos. Postea comprehensam vis in, detracto deseruisse mei ea. Ex sadipscing deterruisset concludaturque quo.">
-								<img src="img/works/thumbs/3.jpg" alt="img01"/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/4.jpg" data-title="Portfolio title" data-description="In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea. Sed oratio repudiare ei, cum an magna labitur, eu atqui augue mei. Pri consul detracto eu, solet nusquam accusam ex vim, an movet interesset necessitatibus mea.">
-								<img src="img/works/thumbs/4.jpg" alt="img01"/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/5.jpg" data-title="Portfolio title" data-description="Duo te dico volutpat, unum elit oblique per id. Ne duo mollis sapientem intellegebat. Per at augue vidisse percipit, pri vocibus assueverit interesset ut, no dolore luptatum incorrupte nec. In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea">
-								<img src="img/works/thumbs/5.jpg" alt="img01"/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/6.jpg" data-title="Portfolio title" data-description="Id elit saepe pro. In atomorum constituam definitionem quo, at torquatos sadipscing eum, ut eum wisi meis mentitum. Probo feugiat ea duo. An usu platonem instructior, qui dolores inciderint ad. Te elit essent mea, vim ne atqui legimus invenire, ad dolor vitae sea.">
-								<img src="img/works/thumbs/6.jpg" alt="img01"/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/7.jpg" data-title="Portfolio title" data-description="Duo te dico volutpat, unum elit oblique per id. Ne duo mollis sapientem intellegebat. Per at augue vidisse percipit, pri vocibus assueverit interesset ut, no dolore luptatum incorrupte nec. In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea. Sed oratio repudiare ei, cum an magna labitur, eu atqui augue mei.">
-								<img src="img/works/thumbs/7.jpg" alt="img01"/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/8.jpg" data-title="Portfolio title" data-description="No nisl legere recusabo nam, ius an tale pericula evertitur, dicat phaedrum qui in. Usu numquam legendos in, voluptaria sadipscing ut vel. Eu eum mandamus volutpat gubergren, eos ad detracto nominati, ne eum idque elitr aliquam.">
-								<img src="img/works/thumbs/8.jpg" alt="img01"/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/9.jpg" data-title="Portfolio title" data-description="Lorem ipsum dolor sit amet, ex pri quod ferri fastidii. Mazim philosophia eum ad, facilisis laboramus te est. Eam magna fabellas ut. Ne vis diceret accumsan salutandi, pro in impedit accusamus dissentias, ut nonumy eloquentiam ius.">
-								<img src="img/works/thumbs/9.jpg" alt="img01"/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/10.jpg" data-title="Portfolio title" data-description="Duo te dico volutpat, unum elit oblique per id. Ne duo mollis sapientem intellegebat. Per at augue vidisse percipit, pri vocibus assueverit interesset ut, no dolore luptatum incorrupte nec. In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea. Sed oratio repudiare ei, cum an magna labitur, eu atqui augue mei. Pri consul detracto eu, solet nusquam accusam ex vim.">
-								<img src="img/works/thumbs/10.jpg" alt="img01"/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/11.jpg" data-title="Portfolio title" data-description="Vim ad persecuti appellantur. Eam ignota deterruisset eu, in omnis fierent convenire sed. Ne nulla veritus vel, liber euripidis in eos. Postea comprehensam vis in, detracto deseruisse mei ea. Ex sadipscing deterruisset concludaturque quo.">
-								<img src="img/works/thumbs/11.jpg" alt="img01"/>
-							</a>
-            </li>
-            <li>
-              <a href="#" data-largesrc="img/works/12.jpg" data-title="Portfolio title" data-description="Mea an eros periculis dignissim, quo mollis nostrum elaboraret et. Id quem perfecto mel, no etiam perfecto qui. No nisl legere recusabo nam, ius an tale pericula evertitur, dicat phaedrum qui in. Usu numquam legendos in, voluptaria sadipscing ut vel. Eu eum mandamus volutpat gubergren, eos ad detracto nominati, ne eum idque elitr aliquam.">
-								<img src="img/works/thumbs/12.jpg" alt="img01"/>
-							</a>
-            </li>
-          </ul>
+                                        <div id="p-item-1" class="grid-item element-item p_one">
+                                            <a class="item-link ajax-portfolio" href="webopener.html" data-id="1">
+                                                <img src="images/AIQ.jpg" alt="" >
+                                                <div class="portfolio-text-holder">
+                                                    <p class="portfolio-title">Assalam Institute of Quraan</p>
 
-        </div> 
-      </div> --->
-    </div>
-  </section>
+                                                </div>
+                                            </a>
+                                            <a href = "webopener.html"></a>
+                                        </div>
 
-  <!-- Parallax 2 -->
-  <section id="parallax2" class="home-section parallax" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">  
-          <div class="color-light">
-            <h2 class="wow bounceInDown" data-wow-delay="0.5s">A lot of cool things too !</h2>
-          </div>
-        </div>
-        </div>
-      </div>
-  </section>
+                                        <div id="p-item-1" class="grid-item element-item p_one">
+                                            <a class="item-link ajax-portfolio" href="webopener.html" data-id="1">
+                                                <img src="images/BlueOceanNails.jpg" alt="" >
+                                                <div class="portfolio-text-holder">
+                                                    <p class="portfolio-title">Blue Ocean Nails and Spa</p>
 
-  <!-- Team -->
-  <section id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="section-heading">
-            <h2>Our Team</h2>
-            <div class="heading-line"></div>
-            <p>Our Awesome team of Developers, Marketers, Consultants !</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-          <div class="box-team wow bounceInUp" data-wow-delay="0.1s">
-            <img src="img/team/1.jpg" alt="" class="img-circle img-responsive" />
-            <h4>Thayallan Srinathan</h4>
-            <p>Co-founder/Developer</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.3s">
-          <div class="box-team wow bounceInUp">
-            <img src="img/team/2.jpg" alt="" class="img-circle img-responsive" />
-            <h4>Moiz Ahmed</h4>
-            <p>Co-founder/Developer</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.5s">
-          <div class="box-team wow bounceInUp">
-            <img src="img/team/3.jpg" alt="" class="img-circle img-responsive" />
-            <h4>Roshan Patel</h4>
-            <p>Lead Consultant</p>
-          </div>
-	      </div>
-	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.7s">
-          <div class="box-team wow bounceInUp">
-            <img src="img/team/4.jpg" alt="" class="img-circle img-responsive" />
-            <h4>Hemraj Gosai</h4>
-            <p>Social Media Specialist</p>
-          </div>
-        </div>
-      </div>
-  </section>
+                                                </div>
+                                            </a>
+                                        </div>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="section-heading">
-            <h2>Contact us</h2>
-            <div class="heading-line"></div>
-            <p>If you have any questions or you would like to get a free estimate for your project or even interested in referring someone to us please contact us using any of the methods below !</p>
-          </div>
+
+                                        <div id="p-item-1" class="grid-item element-item p_one">
+                                            <a class="item-link ajax-portfolio" href="assalaminstitute.ca" data-id="1">
+                                                <img src="images/WFP.jpg" alt="" >
+                                                <div class="portfolio-text-holder">
+                                                    <p class="portfolio-title">World Famous Pizza</p>
+
+                                                </div>
+                                            </a>
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="block center-relative center-text more-posts-portfolio-holder">
+                                    <a class="more-posts-portfolio">
+                                        <img src="images/icon_plus.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+              -->
+                <!-- Portfolio -->
+                <div id="portfolio" class="section full-screen full-width">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="content-wrapper">
+                            <script>
+                                var slider1_speed = "2000";
+                                var slider1_auto = "true";
+                                var slider1_hover = "true";
+                            </script>
+                            <div class="image-slider-wrapper relative">
+                                <center><h2 class = "entry-title" >PORTFOLIO</h1></center>
+                                <div id="slider1" class="owl-carousel owl-theme image-slider slider">
+                                    <div class="owl-item">
+                                        <a href="webopener.html" class="scroll">
+                                            <img src="images/AIQHeaderA.jpg" height = 400px alt="" >
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="webopener.html" class="scroll">
+                                            <img src="images/BlueOceanHead.jpg" height = 400px alt="">
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a href="webopener.html" class="scroll">
+                                            <img src="images/WFP.jpg" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="owl-item">
+                                        <a href="webopener.html" class="scroll">
+                                            <img src="images/NEWNYC.jpg" alt="">
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- About -->
+                <div id="about" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-right">
+                            <div class="split-color"></div>
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-right">
+                                <div class="section-top-image">
+                                    <img src="images/03_right.png" alt="">
+                                </div>
+                                <h2 class="entry-title">
+                                    WHO <br>WE <br>ARE
+                                </h2>
+                                <p class="page-desc">
+                                    About our <br>
+                                    company
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-left">
+                            <div class="content-wrapper">
+                                <div class="info-text">
+                                    We are TMDevelopers or more commonly known as TMDevs. We are a Website Development and a Digital Marketing Firm. Our goal is to be able to build a company that people can rely on !
+                                </div>
+                                <p>&nbsp;</p>
+
+                                <p>&nbsp;</p>
+
+                                <div class="one_half">
+                                    <p>
+                                        <strong>There are so many similar companies out there, why should I trust you ?</strong>
+                                    </p>
+                                    <p>&nbsp;</p>
+                                    <p>
+                                        Our company is unlike other companies not only due to our transparency and adaptability with our clients during the development processs but we also provide complimentary consulting to take your business to the next level ! We also believe our quality to be well above the industry standards !
+                                    </p>
+                                </div>
+                                <div class="one_half last">
+                                  <p>
+                                    <strong> How much do you guys charge for your services?</strong>
+                                  </p>
+                                  It honestly varies on a number of different factors. If you are interested in getting your website done please do email us at info@tmdevs.com
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+
+                <!-- News
+                <div id="news" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-right">
+                            <div class="split-color"></div>
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-right">
+                                <div class="section-top-image">
+                                    <img src="images/04_right.png" alt="">
+                                </div>
+                                <h2 class="entry-title">
+                                    BL<br>OG
+                                </h2>
+                                <p class="page-desc">
+                                    Read our <br>
+                                    recent news
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-left">
+                            <div class="content-wrapper">
+                                <div class="blog-holder-scode latest-posts-scode block center-relative">
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published">January 27, 2018</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Uncategorized</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="entry-title">
+                                            <a href="#">
+                                                Globular star cluster radio scope great turbulent
+                                                <span class="arrow"></span>
+                                            </a>
+                                        </h4>
+                                        <div class="excerpt">
+                                            Intelligent beings. Rogue Jean-Francois Champollion. Hearts of the stars venture, hydrogen atoms cosmic fugue across ...
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published">January 26, 2018</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Uncategorized</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="entry-title">
+                                            <a href="#">
+                                                Muse about a very small stage in a vast arena
+                                                <span class="arrow"></span>
+                                            </a>
+                                        </h4>
+                                        <div class="excerpt">
+                                            Intelligent beings. Rogue Jean-Francois Champollion. Hearts of the stars venture, hydrogen atoms cosmic fugue across ...
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published">January 25, 2018</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Uncategorized</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="entry-title">
+                                            <a href="#">
+                                                Are creatures of the vast cosmos of global death
+                                                <span class="arrow"></span>
+                                            </a>
+                                        </h4>
+                                        <div class="excerpt">
+                                            Intelligent beings. Rogue Jean-Francois Champollion. Hearts of the stars venture, hydrogen atoms cosmic fugue across ...
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published">January 24, 2018</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Uncategorized</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="entry-title">
+                                            <a href="#">
+                                                Preserve and cherish that pale blue dot star stuff
+                                                <span class="arrow"></span>
+                                            </a>
+                                        </h4>
+                                        <div class="excerpt">
+                                            Intelligent beings. Rogue Jean-Francois Champollion. Hearts of the stars venture, hydrogen atoms cosmic fugue across ...
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published">January 23, 2018</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Uncategorized</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="entry-title">
+                                            <a href="#">
+                                                Kindling the energy hidden in matter vanquish now
+                                                <span class="arrow"></span>
+                                            </a>
+                                        </h4>
+                                        <div class="excerpt">
+                                            Intelligent beings. Rogue Jean-Francois Champollion. Hearts of the stars venture, hydrogen atoms cosmic fugue across ...
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published">January 22, 2018</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Uncategorized</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="entry-title">
+                                            <a href="#">
+                                                Galaxyrise great turbulent clouds colonies
+                                                <span class="arrow"></span>
+                                            </a>
+                                        </h4>
+                                        <div class="excerpt">
+                                            Intelligent beings. Rogue Jean-Francois Champollion. Hearts of the stars venture, hydrogen atoms cosmic fugue across ...
+                                        </div>
+                                    </article>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+              -->
+
+                <!-- Pricing
+                <div id="pricing" class="section full-width">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="content-wrapper">
+                            <div class="two_third">
+                                <div class="info-text">
+                                    Terre estere doloremique sei totames laudantium remeseo aperiam, eaque ipsa quae ab illo inventore veritatis
+                                </div>
+                            </div>
+                            <div class="one_third last">
+                                Dolor lorem ipsu seti per se neque porro quisquam est, quister set dolorem per sei donec nulla est rete et quasi architecto beataes vitae dicta sunt
+                            </div>
+                            <div class="clear"></div>
+
+                            <div class="one_third">
+                                <div class="pricing-table">
+                                    <div class="pricing-table-header">
+                                        <div class="pricing-table-title pricing-orange">
+                                            BASIC
+                                        </div>
+                                    </div>
+                                    <div class="pricing-table-price">$29</div>
+                                    <div class="pricing-table-desc">per month</div>
+                                    <div class="pricing-table-content-holder">
+                                        <ul>
+                                            <li>25 GB Storage</li>
+                                            <li>24/7 Support</li>
+                                            <li>Up to 50 Users</li>
+                                            <li>Donec Estu</li>
+                                            <li>Lorem Ipsum</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="pricing-button scroll">CHOOSE</a>
+                                </div>
+                            </div>
+
+                            <div class="one_third">
+                                <div class="pricing-table">
+                                    <div class="pricing-table-header">
+                                        <div class="pricing-table-title pricing-blue">
+                                            ADVANCED
+                                        </div>
+                                    </div>
+                                    <div class="pricing-table-price">$59</div>
+                                    <div class="pricing-table-desc">per month</div>
+                                    <div class="pricing-table-content-holder">
+                                        <ul>
+                                            <li>25 GB Storage</li>
+                                            <li>24/7 Support</li>
+                                            <li>Up to 50 Users</li>
+                                            <li>Donec Estu</li>
+                                            <li>Lorem Ipsum</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="pricing-button scroll">CHOOSE</a>
+                                </div>
+                            </div>
+                            <div class="one_third last">
+                                <div class="pricing-table">
+                                    <div class="pricing-table-header">
+                                        <div class="pricing-table-title pricing-green">
+                                            EXPERT
+                                        </div>
+                                    </div>
+                                    <div class="pricing-table-price">$99</div>
+                                    <div class="pricing-table-desc">per month</div>
+                                    <div class="pricing-table-content-holder">
+                                        <ul>
+                                            <li>25 GB Storage</li>
+                                            <li>24/7 Support</li>
+                                            <li>Up to 50 Users</li>
+                                            <li>Donec Estu</li>
+                                            <li>Lorem Ipsum</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="pricing-button scroll">CHOOSE</a>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+              -->
+
+                <!-- Skills -->
+                <div id="skills" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left">
+                                <div class="section-top-image">
+                                    <img src="images/05_left.png" alt="">
+                                </div>
+                                <h2 class="entry-title">
+                                    OUR <br>SKI<br>LLS
+                                </h2>
+                                <p class="page-desc">
+                                    Our set of <br>
+                                    competences
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div class="info-text">
+                                    Our websites are built using <br>
+                                    the following languages
+                                </div>
+                                <p>&nbsp;</p>
+
+                                <div class="skills-holder">
+                                    <div class="skill-holder">
+                                        <div class="skill-percent"><img src = "images/html-6.png"></img></div>
+                                        <div class="skill-text">
+                                            <span>HTML</span>
+                                            <div class="skill">
+                                                <div class="skill-fill" data-fill="100%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-holder">
+                                        <div class="skill-percent"><img src = "images/css-3.png"></img></div>
+                                        <div class="skill-text">
+                                            <span>CSS</span>
+                                            <div class="skill">
+                                                <div class="skill-fill" data-fill="100%"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-holder">
+                                        <div class="skill-percent"><img src = "images/javascript1.png"></img></div>
+                                        <div class="skill-text">
+                                            <span>Javascript</span>
+                                            <div class="skill">
+                                                <div class="skill-fill" data-fill="100%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-holder">
+                                        <div class="skill-percent"><img src = "images/python-snake.png"></img></div>
+                                        <div class="skill-text">
+                                            <span>Django</span>
+                                            <div class="skill">
+                                                <div class="skill-fill" data-fill="100%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <!-- Team -->
+                <div id="team" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left">
+                                <div class="section-top-image">
+                                    <img src="images/06_left.png" alt="">
+                                </div>
+                                <h2 class="entry-title">
+                                    MEET <br>OUR <br>TEAM
+                                </h2>
+                                <p class="page-desc">
+                                    <!--Get to know us <br>
+                                    much better-->
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div id="team-holder">
+                                    <div class="team-load-content-holder"></div>
+                                    <ul class="member-holder-wrapper">
+
+                                        <li id="team-member-1" class="member-holder one_half">
+
+                                                <img class="attachment-post-thumbnail" src="images/team/2.jpg" alt="">
+                                                <div class="member-mask">
+                                                    <div class="member-info-holder">
+                                                        <p class="member-name">Moiz Ahmed</p>
+                                                        <p class="member-position">Co-Founder</p>
+                                                    </div>
+                                                </div>
+
+                                        </li>
+
+                                        <li id="team-member-2" class="member-holder one_half">
+                                            <!--<a class="img-link ajax-member-content" href="team-2.html" data-id="2">-->
+                                                <img class="attachment-post-thumbnail" src="images/team/1.jpg" alt="" >
+                                                <div class="member-mask">
+                                                    <div class="member-info-holder">
+                                                        <p class="member-name">Thayallan Srinathan</p>
+                                                        <p class="member-position">Co-Founder</p>
+                                                    </div>
+                                                </div>
+                                            <!--</a>-->
+                                        </li>
+
+                                        <li id="team-member-3" class="member-holder one_half">
+                                            <!--<a class="img-link ajax-member-content" href="team-3.html" data-id="3">-->
+                                                <img class="attachment-post-thumbnail" src="images/team/abdul.jpeg" height = 430px width = 430px alt="" >
+                                                <div class="member-mask">
+                                                    <div class="member-info-holder">
+                                                        <p class="member-name">Abdul Shahzad</p>
+                                                        <p class="member-position">Developer</p>
+                                                    </div>
+                                                </div>
+                                            <!--</a>-->
+                                        </li>
+
+                                        <!--<li id="team-member-4" class="member-holder one_half">
+                                            <a class="img-link ajax-member-content" href="team-4.html" data-id="4">
+                                                <img class="attachment-post-thumbnail" src="images/team/navinaa.jpeg" height = 200px alt="" >
+                                                <div class="member-mask">
+                                                    <div class="member-info-holder">
+                                                        <p class="member-name">Navinaa San</p>
+                                                        <p class="member-position">Growth Coordinator</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                      -->
+                                        <li id="team-member-5" class="member-holder one_half">
+                                            <!--<a class="img-link ajax-member-content" href="team-5.html" data-id="5">-->
+                                                <img class="attachment-post-thumbnail" src="images/team/4.jpg" alt="" >
+                                                <div class="member-mask">
+                                                    <div class="member-info-holder">
+                                                        <p class="member-name">Hemraj Gosai</p>
+                                                        <p class="member-position">HR</p>
+                                                    </div>
+                                                </div>
+                                            <!--</a>-->
+                                        </li>
+
+
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+
+                <!-- Clients
+                <div id="clients" class="section full-width">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="content-wrapper">
+                            <div class="one_half">
+                                <script>
+                                    var textSlider1_speed = "2000";
+                                    var textSlider1_auto = "true";
+                                    var textSlider1_hover = "true";
+                                </script>
+                                <div class="text-slider-wrapper relative">
+                                    <div class="text-slider-header-quotes"></div>
+
+                                    <div id="textSlider1" class="text-slider slider owl-carousel owl-theme">
+
+                                        <div class="text-slide">
+                                            <p class="text-slide-content">
+                                                A very small stage in a vast cosmic arena are creatures of the cosmos vanquish the impossible white dwarf astonishment. A still more glorious dawn awaits light.
+                                            </p>
+                                            <img class="text-slide-img" src="images/testiomonial_img_01.jpg" alt="" />
+                                            <p class="text-slide-name">Peter Hall</p>
+                                            <p class="text-slide-position">CEO</p>
+                                        </div>
+
+                                        <div class="text-slide">
+                                            <p class="text-slide-content">
+                                                Globular star cluster, another world brain is the seed of intelligence a billion trillion bits of moving fluff hearts of the stars. Hypatia preserve and cherish that pale blue dot.
+                                            </p>
+                                            <img class="text-slide-img" src="images/testiomonial_img_02.jpg" alt="" />
+                                            <p class="text-slide-name">Jane Williams</p>
+                                            <p class="text-slide-position">DESIGNER</p>
+                                        </div>
+
+                                        <div class="text-slide">
+                                            <p class="text-slide-content">
+                                                Hypatia preserve and cherish that pale blue dot. Hundreds of thousands! Inconspicuous motes of rock and gas the carbon in our apple pies creatures of the cosmos.
+                                            </p>
+                                            <img class="text-slide-img" src="images/testiomonial_img_03.jpg" alt="" />
+                                            <p class="text-slide-name">John Smith</p>
+                                            <p class="text-slide-position">GURU</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="one_fourth top-80">
+                                <img src="images/client_logo_01.png" alt="" class="bottom-25 aligncenter">
+                                <img src="images/client_logo_05.png" alt="" class="bottom-25 aligncenter">
+                                <img src="images/client_logo_02.png" alt="" class="bottom-25 aligncenter">
+                            </div>
+
+                            <div class="one_fourth last top-80">
+                                <img src="images/client_logo_06.png" alt="" class="bottom-25 aligncenter">
+                                <img src="images/client_logo_03.png" alt="" class="bottom-25 aligncenter">
+                                <img src="images/client_logo_04.png" alt="" class="bottom-25 aligncenter">
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+              -->
+                <!-- Contact
+                <div id="contact" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left">
+                                <div class="section-top-image">
+                                    <img src="images/07_left.png" alt="">
+                                </div>
+                                <h2 class="entry-title">
+                                    STAY <br>IN <br>TOUCH
+                                </h2>
+                                <p class="page-desc">
+                                    Use contact <br>
+                                    form on the right
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div class="info-text">
+                                    Ghostly white figures in coveralls and <br>
+                                    helmets are soflty dancing of the cosmic
+                                </div>
+                                <p>&nbsp;</p>
+
+                                <div class="contact-form">
+                                    <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
+                                    <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>
+                                    <p><input id="subject" type="text" name="your-subject" placeholder="Subject"></p>
+                                    <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
+                                    <p class="contact-submit-holder"><input type="submit" onClick="SendMail()" value="SEND"></p>
+                                </div>
+
+                                <p>&nbsp;</p>
+
+                                <div class="one_half">
+                                    Flatland! A very small stage in a vast cosmic arena great turbulent clouds encyclopaedia galactica star stuff harvesting
+                                </div>
+
+                                <div class="one_half last">
+                                    Phone: +321 123 456 7 <br>
+                                    E-mail: hello@cocobasic.com <br>
+                                    Website: www.yoursitegoeshere.com <br>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+              -->
+
+            <!-- Footer -->
+            <section id = "contact">
+            <footer class="footer">
+                <div class="footer-content center-relative">
+                    <div class="footer-mail">
+                        <a href="mailto:info@tmdevs.com">info@tmdevs.com</a>
+                    </div>
+                    <div class="footer-number">
+                        <a href="+1 647-274-7659">+1 647 274-7659</a>
+                    </div>
+                    <div class="footer-info">
+                        A Toronto based company.
+                    </div>
+
+                    <div class="social-holder">
+                        <a href="#">
+                            <span class="fa fa-facebook"></span>
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+
+                    </div>
+
+                    <div class="copyright-holder">
+                        © TMDevs 2019
+                    </div>
+                </div>
+            </footer>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Bottom widget -->
-  <section id="bottom-widget">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="contact-widget wow bounceInLeft">
-            <i class="fa fa-map-marker fa-4x"></i>
-            <h5>Main Office</h5>
-            <p>
-              Toronto, Canada <br> We're working on it....
-            </p>
-          </div>
+        <!--Load JavaScript-->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src='js/imagesloaded.pkgd.js'></script>
+        <script src='js/jquery.fitvids.js'></script>
+        <script src='js/jquery.smartmenus.min.js'></script>
+        <script src='js/isotope.pkgd.js'></script>
+        <script src='js/jquery.easing.1.3.js'></script>
+        <script src='js/jquery.prettyPhoto.js'></script>
+        <script src='js/owl.carousel.min.js'></script>
+        <script src='js/jquery.sticky-kit.min.js'></script>
+        <script src='js/main.js'></script>
+        <script src="js/app.js" charset="utf-8"></script>
+
+        <div class = "credits">
+              <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         </div>
-        <div class="col-md-4">
-          <div class="contact-widget wow bounceInUp">
-            <i class="fa fa-phone fa-4x"></i>
-            <h5>Call</h5>
-            <p>
-              +1 647 228 3352<br> +1 416 854 0289
+    </body>
 
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="contact-widget wow bounceInRight">
-            <i class="fa fa-envelope fa-4x"></i>
-            <h5>Email us</h5>
-            <p>
-              info@tmdevs.com
-            </p>
-          </div>
-        </div>
-      </div>
-        
-      <div class="row mar-top30">
-        <div class="col-md-12">
-          <h5>We're on Instagram !</h5>
-          <ul class="social-network">
-              <!-- Set up fb
-            <li><a href="https://www.facebook.com/">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-						</span></a>
-            </li>
 
-            <li><a href="#">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
-						</span></a>
-            </li>
-            <li><a href="#">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-						</span></a>
-            </li>
--->
-            <li><a href="https://www.instagram.com/tmdevs/">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-						</span></a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p>Copyright &copy; TMDevs.com 2018</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-	  <!-- Hotjar Tracking Code for www.tmdevs.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:968723,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- js -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.simple-text-rotator.min.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.nav.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/stellar.js"></script>
-
-  <!-- Template Custom Javascript File -->
-  <script src="js/custom.js"></script>
-
-</body>
 </html>
